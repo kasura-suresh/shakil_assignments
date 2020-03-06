@@ -1,3 +1,9 @@
+/*************************************************************
+    C++ programe to implement inheritence in structure and class
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
 #include<iostream>
 using namespace std;
 class A{ // definning a class

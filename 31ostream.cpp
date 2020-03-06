@@ -1,3 +1,9 @@
+/*************************************************************
+    C++ programe to implement Ostream operator 
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
 #include <iostream> 
 using namespace std; 
   

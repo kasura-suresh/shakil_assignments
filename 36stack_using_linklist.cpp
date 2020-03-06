@@ -1,3 +1,10 @@
+/*************************************************************
+    C++ programe to implement STACK using Linked List
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
+
 #include<iostream>
 using namespace std;
 struct node // making a node of structure type

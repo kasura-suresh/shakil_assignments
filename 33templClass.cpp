@@ -1,3 +1,10 @@
+/*************************************************************
+    C++ programe to implement Template Class
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
+
 #include<iostream>
 using namespace std;
 template <class T> // defining a template for class

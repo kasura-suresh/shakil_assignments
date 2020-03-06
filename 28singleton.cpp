@@ -1,3 +1,10 @@
+/*************************************************************
+    C++ programe to implement singleton class
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
+
 #include<iostream>
 using namespace std;
 class Singleton

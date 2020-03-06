@@ -1,3 +1,10 @@
+/*************************************************************
+    C++ programe to implement muti-Level Inheritance
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
+
 #include<iostream>
 using namespace std;
 class Student

@@ -1,3 +1,9 @@
+/*************************************************************
+    C++ programe to implement Multiple Inheritance
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
 #include<iostream>
 using namespace std;
 class class1{

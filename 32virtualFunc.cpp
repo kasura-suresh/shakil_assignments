@@ -1,5 +1,7 @@
-/* c++ program to implement virtual function  
-   and its application */
+/*************************************************************
+    C++ programe to implement virtual function
+    author : MD SHAKIL ANSARI
+ *************************************************************/
    
 #include<iostream>
 using namespace std;
@@ -21,8 +23,8 @@ class derived:public base
 };    
 int main()    
 {    
- base* a;    //pointer of base class    
- derived b;     //object of derived class    
+ A* a;    //pointer of base class    
+ B b;     //object of derived class    
  a = &b;    
  a->display();  //Late Binding or dynamic linkage  
  return 0;     

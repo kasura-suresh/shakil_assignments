@@ -1,3 +1,9 @@
+/*************************************************************
+    C++ programe to implement operator overloading
+    author : MD SHAKIL ANSARI
+ *************************************************************/
+
+
 #include<iostream>
 using namespace std;
 class A{
