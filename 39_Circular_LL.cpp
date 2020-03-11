@@ -5,9 +5,7 @@
  ****************************************/
 
 
-
 #include<iostream>
-#include<stdio.h>
 using namespace std;
 struct node // making a node of structure type
 {
@@ -28,44 +26,43 @@ class Circular_LL
 		int data;
 		cout<<"enter an element"<<endl;
 		cin>>data;
-	//	node* temp = new node ;
-		node* ptr = START ;
+		node* temp = new node ; // allocating memory to new node
+		node* ptr = START ; // to keep START intact
+		temp->data = data ;
 		
 		//if the list is NOT empty
-		if(START != NULL)
+    	if(START != NULL)
 		{
 			while(ptr->next != START)
-			{
-				ptr = ptr->next ;
-			    ptr->next = ptr ; // last node pointing the newly created node
-			}
-			ptr->data = data ;
-		    ptr->next = START ;		
+			    ptr = ptr->next ;
+			ptr->next = temp ; // last node pointing the newly created node
+			temp->next = START ;
 		}
-		else{ // Incase of empty node
-		ptr->data = data ;
-		ptr->next = START ;	
-		START=ptr;
-		//temp->next = temp ;// new node pointing to itself
-		//START = temp ;
+		else // Incase of empty node
+		{
+		temp->next = temp ;// new node pointing to itself
+		START = temp ;
 	}
 	}
 	void display() 
 	{ 
        node*  ptr;
        ptr = START;
-       while(ptr->next != START){
-       	cout<< ptr->data <<" "; 
+   do 
+   { 
+      cout<< ptr->data <<" "; 
       ptr = ptr->next; 
-	   }
+   } while(ptr != START);
    
    
-    cout<<ptr->next<<endl; //JUST trying to see the address of START node here
-    
-	 if(ptr == START)       // to ensure circular linked list 
-   cout<<"yes it is a circular linked list"<<endl;
+  // cout<<ptr->next<<endl; //JUST trying to see the address of START node here
+   
+   
+   if(ptr == START)       // to ensure circular linked list 
+   cout<<"\nyes it is a circular linked list"<<endl;
    else
     cout<<"NO it is NOT a circular linked list"<<endl; 
+    
     
    }
 }; 
