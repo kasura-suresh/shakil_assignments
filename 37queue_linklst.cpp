@@ -32,13 +32,13 @@ class queue
 			if(FRONT == NULL)
 			{
 		     	FRONT = REAR = temp; // incase queue is empty , new node becomes the 1st node
-	    	}
-	    	else 
-	    	{
+	    	        }
+	    	       else 
+	    	       {
 	    	
 			REAR->next = temp;
 			REAR = temp;	
-			}
+		       }
 		}
 		void Delete() // deletes from the front
 		{
@@ -47,18 +47,18 @@ class queue
 			{
 				cout<<"UNDERFLOW..queue is empty"<<endl ;
 			}
-			else if(FRONT == REAR) // incase of only one 
+			else if(FRONT == REAR) // incase of only one node 
 			{
 			    delete FRONT ;
-				FRONT = REAR = NULL ;
-		    }
-		    else
-		    {
+			    FRONT = REAR = NULL ;
+		        }
+		       else
+		       {
 		    	node* temp = new node ;
 		     	temp = FRONT ;
 		     	FRONT = FRONT->next ; // front is modified
 		     	delete temp ; // actually front is deleted
-		    }
+		       }
 			
 		}
 		void display()
@@ -72,8 +72,8 @@ class queue
 				{
 				cout<<temp->data<<" ";
 				temp = temp->next ;
-			    }
-			    cout<<endl;
+			        }
+			       cout<<endl;
 			}
 		}
 		

@@ -6,36 +6,33 @@
 
 #include<iostream>
 using namespace std;
-class class1{
-	    public:
-		int data;
-		class1(){
-			cout<<"constructtor of 1st class is invoked"<<endl;
-		}
+class class1
+{
+     public:
+     int data;
+     class1()
+     {
+	cout<<"constructtor of 1st class is invoked"<<endl;
+     }
 		
-			
-		
-	
 };
-class class2{
+class class2
+{
 	public:
 	int num;	
-	class2(){
-			cout<<"constructtor of 2nd class is invoked"<<endl;
-			
-			}
-			
-			
-		
-	
+	class2()
+        {
+	  cout<<"constructtor of 2nd class is invoked"<<endl;
+	}
+
 };
-class class3 :public class2,public class1{ // implementing multiple inheritance
-    public:
-	class3(){
-			cout<<"constructtor of 3rd class is invoked"<<endl;
-			
-		}
-	
+class class3 :public class2,public class1 // implementing multiple inheritance
+{    
+      public:
+	class3()
+        {
+	  cout<<"constructtor of 3rd class is invoked"<<endl;
+	}
 };
 int main()
 {

@@ -1,5 +1,6 @@
 /*************************************************************
     C++ programe to implement Template Class
+    note - templetized classes promote generality of the code 
     author : MD SHAKIL ANSARI
  *************************************************************/
 
@@ -11,7 +12,7 @@ template <class T> // defining a template for class
 class calculator
 {
 	public:
-		T num1,num2;
+		T num1,num2; // T is placeholder of any data type
 		T add()
 		{
 			return (num1+num2);

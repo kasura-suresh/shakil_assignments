@@ -16,7 +16,7 @@ class linkedList
 	private :
 	node *START;
 	public :
-	linkedList( ) //constructor to intialize the start pounter
+	linkedList( ) //constructor to intialize the start pointer
 	{
 		START = NULL ;
 	}
@@ -30,9 +30,9 @@ class linkedList
 		temp->data = data ;
 		temp->next = NULL ;
 		if(START == NULL)
-	    START = temp ; //makes new node as the first node
-	    else
-	    {
+	        START = temp ; //makes new node as the first node
+	        else
+	        {
 	    	node *ptr ;
 	    	ptr = START ; //for not disturbing START pointer
 	    	while(ptr->next != NULL) // checks the last node of the list
@@ -50,7 +50,7 @@ class linkedList
 			{
 			cout<<ptr->data<<" "; //prints the data of currently pointed node
 			ptr = ptr->next ; // after printing , points to the next node
-		    }
+		        }
 			
 		}
 	

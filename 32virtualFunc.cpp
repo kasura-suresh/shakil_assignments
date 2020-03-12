@@ -1,5 +1,7 @@
 /*************************************************************
     C++ programe to implement virtual function
+   note -virtual keyword will enforce compiler to do late binding
+         in order to run the actual target function
     author : MD SHAKIL ANSARI
  *************************************************************/
    
@@ -8,7 +10,7 @@ using namespace std;
 class base    
 {    
  public:    
- virtual void display()  //virtual class definition  
+ virtual void display()  //virtual function definition  
  {    
   cout << "Base class is invoked"<<endl;    
  }    

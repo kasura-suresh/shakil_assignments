@@ -3,8 +3,6 @@
     author : MD SHAKIL ANSARI
  *************************************************************/
 
-
-
 #include<iostream>
 using namespace std;
 class Student
@@ -15,25 +13,27 @@ class Student
 	{
         cout<<" Enter marks\n";
         cin>>marks;
-        
-    }
+        }
 };
  
-class Test :public Student{ // 1st level inheritance
+class Test :public Student // 1st level inheritance
+{    
     public:
     int p=0;	
     void check()
-	{
+    {
         if(marks>60)
-		{
+	{
             p=1;
         }
     }
 };
  
-class Result :public Test{ // 2nd level inheritance i.e multiple inheritance
+class Result :public Test // 2nd level inheritance i.e multiple inheritance
+{    
     public:
-    void print(){
+    void print()
+    {
         if(p==1)
         cout<<"\n The student is passed";
         else

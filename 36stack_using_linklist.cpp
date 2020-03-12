@@ -38,7 +38,7 @@ class stack
 		else
 		{
 		cout<<"the popped element is"<<TOP->data<<endl;
-		TOP =TOP->next ;
+		TOP =TOP->next ; // the next of a node holds add of its lower node
 		}
 	}
 	void display()
@@ -53,7 +53,7 @@ class stack
 			{
 			cout<<ptr->data<<endl;
 			ptr =ptr->next ;
-		    }
+		        }
 		}
 	}
 };
@@ -62,9 +62,9 @@ int main()
 	int choice;
 	stack object ; // creating an object of stack class
 	cout<<"1) Push into the stack"<<endl;
-   cout<<"2) Pop from the stack"<<endl;
-   cout<<"3) Display the element of stack"<<endl;
-   cout<<"4) Exit"<<endl;
+        cout<<"2) Pop from the stack"<<endl;
+        cout<<"3) Display the element of stack"<<endl;
+        cout<<"4) Exit"<<endl;
    do
    {
    	cout<<"Enter your choice: "<<endl;
@@ -84,17 +84,17 @@ int main()
       case 3:
       	{
 	    object.display();
-		break ;
+	    break ;
     	}
-	  case 4:
-	  	{
+      case 4:
+	 {
 	    cout<<"EXIT"<<endl;
-		break ;
-    	}
-	  default :
-	  	{
-		  cout<<" oops...invalid choice"<<endl;
-	    }			
+	    break ;
+    	 }
+      default :
+	  {
+	   cout<<" oops...invalid choice"<<endl;
+	  }			
       }
     }while(choice != 4);
     return 0;
