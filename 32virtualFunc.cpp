@@ -23,9 +23,9 @@ class derived:public base
 };    
 int main()    
 {    
- A* a;    //pointer of base class    
- B b;     //object of derived class    
- a = &b;    
- a->display();  //Late Binding or dynamic linkage  
+ base* a;    //pointer of base class    
+ derived b;     //object of derived class    
+ a = &b; //pointer of base class is pointing to other class object   
+ a->display();  //Late Binding or dynamic linkage occurs 
  return 0;     
 }    

@@ -42,7 +42,7 @@ class calculator
  int main()
  {
  	calculator<int> intCal; // creating object for integer calculation
- 	calculator<float> floatCal;  // creating object for integer calculation
+ 	calculator<float> floatCal;  // creating object for float calculation
  	cout<<"enter two integers for integer calculation: "<<endl;
     cin>>intCal.num1>>intCal.num2;
     intCal.display();

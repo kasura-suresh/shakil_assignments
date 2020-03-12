@@ -60,7 +60,7 @@ class linkedList
 			if(n == 1)
 			{
 				START = temp->next ; //start will point to the next(2nd) node
-				delete(temp) ;
+				delete(temp) ; // deletes the first node i.e START
 			}
 			else
 			{
@@ -69,7 +69,7 @@ class linkedList
 				{
 					temp = temp->next ; // temp points to (n-1)th node
 				}
-				node* temp1 = temp->next ; // temp1 will point to nth node
+				node* temp1 = temp->next ; // temp1 will point to nth node , the target nodeW
 				temp->next = temp1->next ; //fixing link between (n-1)th node & (n+1)th node
 				delete(temp1);
 			}

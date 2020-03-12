@@ -56,8 +56,8 @@ class queue
 		    {
 		    	node* temp = new node ;
 		     	temp = FRONT ;
-		     	FRONT = FRONT->next ;
-		     	delete temp ;
+		     	FRONT = FRONT->next ; // front is modified
+		     	delete temp ; // actually front is deleted
 		    }
 			
 		}
